@@ -22,12 +22,14 @@
             max-width: 800px;
             margin: 2rem auto;
             padding: 0 1rem;
+            padding-bottom: 6rem;
         }
         section {
             background-color: white;
             padding: 2rem;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
         }
         footer {
             text-align: center;
@@ -38,6 +40,20 @@
             bottom: 0;
             width: 100%;
         }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .feature-item {
+            padding: 1rem;
+            background-color: #f8f8f8;
+            border-radius: 3px;
+        }
+        .team-member {
+            text-align: center;
+            margin: 1rem 0;
+        }
     </style>
 </head>
 <body>
@@ -47,7 +63,48 @@
     <main>
         <section>
             <h2>About Us</h2>
-            <p>This is a simple webpage to demonstrate GitHub workflow.</p>
+            <p>This is a simple webpage to demonstrate GitHub workflow and showcase our amazing team and features.</p>
+        </section>
+        
+        <section>
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Easy to Use</h3>
+                    <p>Simple and intuitive interface for all users.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Responsive</h3>
+                    <p>Works great on all devices and screen sizes.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Fast</h3>
+                    <p>Optimized for maximum performance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Our Team</h2>
+            <div class="team-member">
+                <h3>John Doe</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="team-member">
+                <h3>Jane Smith</h3>
+                <p>UX Designer</p>
+            </div>
+            <div class="team-member">
+                <h3>Mike Johnson</h3>
+                <p>Product Manager</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>Email: contact@reme.example.com</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Address: 123 Tech Street, Silicon Valley, CA 94025</p>
         </section>
     </main>
     <footer>
